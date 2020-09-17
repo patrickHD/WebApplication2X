@@ -1,5 +1,6 @@
 import React from 'react'
 import { Component } from 'react';
+import { connect } from 'react-redux';
 import authService from './AuthorizeService';
 import { AuthenticationResultStatus } from './AuthorizeService';
 import { LoginActions, QueryParameterNames, ApplicationPaths } from './ApiAuthorizationConstants';
@@ -8,7 +9,7 @@ import { LoginActions, QueryParameterNames, ApplicationPaths } from './ApiAuthor
 // This is the starting point for the login process. Any component that needs to authenticate
 // a user can simply perform a redirect to this component with a returnUrl query parameter and
 // let the component perform the login and return back to the return url.
-export class Login extends Component {
+class Login extends Component {
     constructor(props) {
         super(props);
 
@@ -131,3 +132,5 @@ export class Login extends Component {
         window.location.replace(returnUrl);
     }
 }
+
+export default connect()(Login);

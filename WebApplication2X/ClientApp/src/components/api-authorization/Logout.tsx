@@ -3,11 +3,12 @@ import { Component } from 'react';
 import authService from './AuthorizeService';
 import { AuthenticationResultStatus } from './AuthorizeService';
 import { QueryParameterNames, LogoutActions, ApplicationPaths } from './ApiAuthorizationConstants';
+import { connect } from 'react-redux';
 
 // The main responsibility of this component is to handle the user's logout process.
 // This is the starting point for the logout process, which is usually initiated when a
 // user clicks on the logout button on the LoginMenu component.
-export class Logout extends Component {
+class Logout extends Component {
     constructor(props) {
         super(props);
 
@@ -126,3 +127,5 @@ export class Logout extends Component {
         return window.location.replace(returnUrl);
     }
 }
+
+export default connect()(Logout);
