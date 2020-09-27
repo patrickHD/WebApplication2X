@@ -40,7 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Remove="ClientApp\src\components\api-authorization\lo.tsx" />
+    <TypeScriptCompile Remove="ClientApp\src\components\api-authorization\as.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
