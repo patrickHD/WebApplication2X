@@ -41,7 +41,7 @@ const AuthorizeRouteF: FunctionComponent<AuthorizeRouteProps> = props => {
     if (!state.ready) {
         return <div></div>;
     } else {
-        const { component: Component, ...rest } = props;
+        var { component: Component, ...rest } = props;
         return <Route {...rest} render={(props) => {
                 if (state.authenticated) {
                     return <Component {...props} />
