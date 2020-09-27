@@ -21,7 +21,7 @@ export default class ApiAuthorizationRoutes extends Component {
   }
 }
 
-function loginAction(name){
+function loginAction(name: string){
     return (<Login action={name}></Login>);
 }
 

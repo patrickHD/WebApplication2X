@@ -1,4 +1,4 @@
-﻿export const ApplicationName = 'WebApplication1X';
+﻿export const ApplicationName = 'WebApplication2X';
 
 export const QueryParameterNames = {
     ReturnUrl: 'returnUrl',
