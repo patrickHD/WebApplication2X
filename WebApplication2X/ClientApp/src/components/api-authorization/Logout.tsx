@@ -1,5 +1,4 @@
-import React, { FunctionComponent, useState, useEffect, useRef } from 'react'
-import { Component } from 'react';
+import React, { FunctionComponent, useState, useEffect } from 'react'
 import authService from './AuthorizeService';
 import { AuthenticationResultStatus } from './AuthorizeService';
 import { QueryParameterNames, LogoutActions, ApplicationPaths } from './ApiAuthorizationConstants';
