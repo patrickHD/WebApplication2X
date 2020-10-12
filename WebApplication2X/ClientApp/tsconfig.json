@@ -14,7 +14,7 @@
     "jsx": "preserve",
     "types": [],
     "lib": [
-      "ESNext",
+      "ES6",
       "dom"
     ],
     "skipLibCheck": false
